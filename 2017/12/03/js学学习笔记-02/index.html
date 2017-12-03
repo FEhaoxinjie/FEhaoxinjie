@@ -79,17 +79,21 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troublesho">
+<meta name="description" content="#####2017/07/26 #####一、变量提升  在全局作用域下的JS代码自上而下执行之前，浏览器首先会把当前作用域中所有带var和function关键字的，进行提前的声明或者定义，这种提前处理的机制叫做变量提升（预解释）  带var关键字的只是提前的声明（declare） 带function关键字的，声明和定">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2017/12/03/hello-world/index.html">
-<meta property="og:site_name">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:title" content="js学学习笔记-02">
+<meta property="og:url" content="http://yoursite.com/2017/12/03/js学学习笔记-02/index.html">
+<meta property="og:site_name" content="好带马的个人博客">
+<meta property="og:description" content="#####2017/07/26 #####一、变量提升  在全局作用域下的JS代码自上而下执行之前，浏览器首先会把当前作用域中所有带var和function关键字的，进行提前的声明或者定义，这种提前处理的机制叫做变量提升（预解释）  带var关键字的只是提前的声明（declare） 带function关键字的，声明和定义（defined） 都提前完成了只声明没有定义，默认值是undefined；在">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-03T07:43:22.896Z">
+<meta property="og:image" content="http://yoursite.com/2017/12/03/js学学习笔记-02/例题.png">
+<meta property="og:image" content="http://yoursite.com/2017/12/03/js学学习笔记-02/1501313789176.png">
+<meta property="og:image" content="http://yoursite.com/2017/12/03/js学学习笔记-02/1501313826452.png">
+<meta property="og:updated_time" content="2017-12-03T09:31:19.066Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="js学学习笔记-02">
+<meta name="twitter:description" content="#####2017/07/26 #####一、变量提升  在全局作用域下的JS代码自上而下执行之前，浏览器首先会把当前作用域中所有带var和function关键字的，进行提前的声明或者定义，这种提前处理的机制叫做变量提升（预解释）  带var关键字的只是提前的声明（declare） 带function关键字的，声明和定义（defined） 都提前完成了只声明没有定义，默认值是undefined；在">
+<meta name="twitter:image" content="http://yoursite.com/2017/12/03/js学学习笔记-02/例题.png">
 
 
 
@@ -119,13 +123,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/12/03/hello-world/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/12/03/js学学习笔记-02/"/>
 
 
 
 
 
-  <title>Hello World | </title>
+  <title>js学学习笔记-02 | 好带马的个人博客</title>
   
 
 
@@ -165,12 +169,12 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title"></span>
+        <span class="site-title">好带马的个人博客</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
       
-        <p class="site-subtitle">好带马的个人博客</p>
+        <p class="site-subtitle"></p>
       
   </div>
 
@@ -272,16 +276,16 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/03/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/03/js学学习笔记-02/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="daima Hao">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/uploads/avatar.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="">
+      <meta itemprop="name" content="好带马的个人博客">
     </span>
 
     
@@ -289,7 +293,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">js学学习笔记-02</h1>
         
 
         <div class="post-meta">
@@ -301,7 +305,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-03T15:43:22+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-03T17:05:16+08:00">
                 2017-12-03
               </time>
             
@@ -339,15 +343,63 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <p>#####2017/07/26</p>
+<p>#####一、变量提升</p>
+<blockquote>
+<p>在全局作用域下的JS代码自上而下执行之前，浏览器首先会把当前作用域中所有带var和function关键字的，进行提前的声明或者定义，这种提前处理的机制叫做变量提升（预解释）</p>
+<ul>
+<li>带var关键字的只是提前的声明（declare）</li>
+<li>带function关键字的，声明和定义（defined） 都提前完成了<br>只声明没有定义，默认值是undefined；<br>在全局作用域下声明的变量，相当于给全局对象window增加了一个属性（私有作用域不具备这个特点）<br>全局作用域下带var是全局变量，不带var相当于给windo添加了一个属性，不再是变量了。<br>只对=号左边的进行变量提升，右边的是值，不进行提升的操作， var fn；–&gt;undefined；<br>不管条件是否成立，都要进行预解释；</li>
+</ul>
+<p><strong>变量提升的原理</strong></p>
+<p><font color="blue">引子里的代码在函数的局部作用域下变量a被重新定义了，在预加载时候a的作用域范围也就被框定了，a变量不再属于全局变量，而是属于函数作用域，只不过赋值操作是在运行期执行（这就是为什么javascript语言在运行时候会改变变量的类型，因为赋值操作是在运行期进行的），所以第一次使用a变量时候，a变量在局部作用域里没有被赋值，只有栈区的标示名称，因此结果就是undefined了。（这也就是js里的变量提升的原理）<br>不过赋值操作也不是完全不对预加载产生影响，预加载时候javascript引擎会扫描所有代码，但不会运行它，当预加载扫描到了赋值操作，但是赋值操作的变量有没有被var定义，那么该变量就会被赋予全局变量即window对象。</font></p>
+</blockquote>
+<p>####二、作用域</p>
+<p>####1.函数执行的步骤</p>
+<ul>
+<li>首先形成一个私有作用域，供函数体中代码执行。</li>
+<li>形参赋值</li>
+<li>私有作用域下的预解释</li>
+<li>私有作用域中的JS代码自上而下执行</li>
+<li>作用域释放或者不释放<blockquote>
+<p>全局作用域：浏览器加载页面就形成的；<br>私有作用域：函数执行形成的私有作用域；</p>
+</blockquote>
+</li>
+</ul>
+<blockquote>
+<p>不管是全局的还是私有的都是提供JS代码运行环境的，我们把作用域称之为栈内存；</p>
+<p>所有的引用数据类型在定义的时候，都会开辟一个新的内容空间，来存储自己的值，我们把存储的东西的内容空间称之为堆内存</p>
+<p>对象在自己的堆内存中存储的是‘键值对’；<br>函数在自己的堆内存中存储的是‘代码字符串’；</p>
+</blockquote>
+<p><strong>全局变量和私有变量</strong></p>
+<blockquote>
+<p>私有变量：</p>
+<ul>
+<li>函数的形参是私有作用域中的私有变量；</li>
+<li>在私有作用域中声明过的变量或函数都是私有的；</li>
+</ul>
+<p>全局变量：</p>
+<ul>
+<li>除了私有变量其他都是全局变量；</li>
+<li>在全局作用域中声明的变量肯定是全局变量； </li>
+</ul>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">console.log(a,b,c);//undefined undefined undefined</span><br><span class="line">    var a=12,b=13,c=14;</span><br><span class="line">    function fn(a) &amp;#123;</span><br><span class="line">        console.log(a,b,c); //100,undefined,14</span><br><span class="line">        var b=10;</span><br><span class="line">                c=20;</span><br><span class="line">                a=30;</span><br><span class="line">        console.log(a,b,c);//30,10,20;</span><br><span class="line">    &amp;#125;</span><br><span class="line">    fn(100);</span><br><span class="line">    console.log(a,b,c);//12,13,20</span><br></pre></td></tr></table></figure>
+<p><img src="./例题.png" alt="Alt text"></p>
+<blockquote>
+<p>函数执行形成一个私有的作用域（栈内存）<br>1.形参赋值<br>2.变量提升<br>形参或者是声明过的变量都是私有的变量，否则不是私有的</p>
+<p>私有的变量受到了保护，和外界的变量没有关系，不会收到任何的干扰，我们把函数执行的这种保护机制叫做<strong>闭包</strong>；</p>
+<p>  在私有作用域中执行代码的时候，如果当前这个变量不是私有的变量，则向上一级查找，也不是上一级私有的，则继续向上查找，一直找到window。。。。，我们把这种向上一层层查找的机制叫做<strong>作用域链</strong>；</p>
+</blockquote>
+<p><strong>如何查找当前作用域的上级作用域</strong></p>
+<blockquote>
+<p>看当前函数是在那里定义的那么它执行的上级作用域就是谁，和它在那执行没有关系；</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><strong>关于变量提升阶段function和var 优先级问题的ES5.1文档</strong></p>
+<p> <img src="./1501313789176.png" alt="Alt text"><br><img src="./1501313826452.png" alt="Alt text"></p>
+</blockquote>
 
       
     </div>
@@ -368,6 +420,26 @@
       
       
 
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/12/03/js学学习笔记-01/" rel="next" title="js学学习笔记-01">
+                <i class="fa fa-chevron-left"></i> js学学习笔记-01
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/12/03/js学学习笔记-03/" rel="prev" title="js学学习笔记-03">
+                js学学习笔记-03 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
 
       
@@ -416,22 +488,17 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
+              <img class="site-author-image" itemprop="image"
+                src="/uploads/avatar.png"
+                alt="daima Hao" />
+            
               <p class="site-author-name" itemprop="name">daima Hao</p>
-              <p class="site-description motion-element" itemprop="description">好带马的个人博客</p>
+              <p class="site-description motion-element" itemprop="description">you can do everything with javascript!</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -441,7 +508,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">12</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -470,22 +537,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
@@ -567,6 +618,9 @@
 
 
 
+  
+  
+
 
 
 
@@ -603,6 +657,16 @@
   
   
     <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three-waves.min.js"></script>
   
 
 
